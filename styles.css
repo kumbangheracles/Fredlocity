@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Playfair Display", serif; */
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+header nav .logo{
+    display: flex;
+    gap: 10px;   
+}
+header nav .logo h4{
+    font-size: large; 
+}
+header nav .logo img{
+    position: relative;
+    bottom: 25px;
+}
+
+header nav .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    list-style: none;
+}
+
+header nav .navbar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+header nav .login button{
+    padding: 1rem 3rem;
+    background-color: #447265;
+    position: relative;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* border: 2px solid black; */
+}
+
+header nav .login button:hover{
+    background-color: #79ad9e;
+}
+
+/* Home */
+
+#Home .intro .description{
+    text-align: center;
+}
+#Home .intro .description h1{ 
+    font-size: 55px;
+}
+
+#Home .intro .description p{
+    font-family: "Poppins", sans-serif;
+    padding: 2rem ;
+}
+
+#Home .intro .landing-img img{
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+.intro{
+    position: relative;
+    top: 0px;
+}
+
+.selection-tab{
+    padding: 2rem 3rem;
+    background-color: #ffffff;
+    margin-inline: 4rem;
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+    border-radius: 20px;
+    position: absolute; 
+    bottom: -25px;
+    /* right: 35px; */
+    left: 13px;
+
+    width: 1100px;
+    height: 236px;
+}
+.selection-tab h4{
+    padding: 1rem;
+    font-size: x-large;
+}
+.search-box{
+    display: flex;
+    align-content: baseline;
+    /* gap: 1rem; */
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    
+}
+
+.row input{
+    padding: 1rem;
+    width: 300px;
+    height: 60px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+}
+
+
+.search-button button{
+    /* margin-top: 5px; */
+    /* padding: 10px; */
+    border-radius: 10px;
+
+    width: 60px;
+    height: 60px;
+
+    cursor: pointer;
+    background-color: #447265;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.search-button button:hover{
+    background-color: #79ad9e;
+}
+
+#about{
+    padding-inline: 3rem;
+    margin-top: 8rem;
+}
+
+.head-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.change-button{
+    padding: 2rem;
+}
+
+.change-button button{
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: xx-large;
+    border: 1px solid;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.change-button button:hover{
+    background-color: #447265;
+    color: white;
+}
+
+.parent h1{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.parent p{
+    padding-left: 1rem;
+}
+
+.about-content{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* align-items: baseline;    */
+    /* position: absolute; */
+}
+
+
+.desk-room img{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    
+}
+
+.desk-room{
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.desk-room h4{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+ 
+}
+
+
+.parent{
+    width: 1170px;
+    height: 706px;
+}
+
+/* Office Room */
+
+.office-room{
+    /* padding: 1rem; */
+    width: 350px;
+    height: 430px;
+    background-color: #FF5722;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    /* position: absolute;
+    left: 35.5%; */
+}
+/* .office-room:hover{
+    width: 390px;
+    height: 440px;
+} */
+
+.office-room .posisi{
+    display: flex;
+    justify-content: end;
+    margin-inline: 20px;
+}
+
+/* line 1 */
+
+.office-room .office .line1{
+    margin-top: 20px;
+    width: 130px;
+    height: 90px;
+    overflow: hidden;
+    padding: 1rem;
+ }
+
+.diagonal-line {
+    margin-block: 12px;
+    width: 135px;
+    height: 1px; /* Ketebalan garis */
+    background-color: #ffffff; /* Warna garis */
+    transform: rotate(40deg); 
+    position: relative;
+    bottom: 35px;
+    opacity: 40%;
+}
+
+/* line 2 */
+.office-room .office .line2{
+    margin-top: 20px;
+    /* margin-left: 10px; */
+    width: 60px;
+    height: 45px;
+    overflow: hidden;
+ }
+
+.diagonal-line2{
+    margin-bottom: 7.8px;
+    width: 135px;
+    height: 1px; /* Ketebalan garis */
+    background-color: #ffffff; /* Warna garis */
+    transform: rotate(40deg); 
+    opacity: 39%;
+}
+
+
+
+.content-office{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-office h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+.content-office p{
+    font-size: 18px;
+    text-align: center;
+    font-family: "Lato",sans-serif;
+    letter-spacing: 1px;
+}
+
+/* end of office room */
+
+/* meeting room */
+
+.meeting-room{
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.meeting-room img{
+    /* padding-bottom: 1rem; */
+    border-radius: 20px;
+    /* background-color: gray; */
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.meeting-room h4{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+/* end of meeting room */
+
+
+/* button check avaibility in Office Room */
+.check-bar{
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    /* text-align: center; */
+    margin: 1rem;
+    margin-inline: 2rem;
+    border-radius: 40px;
+    gap: 1rem;
+}
+
+.check-bar h3{
+    font-family: "Lato",sans-serif;
+    color: grey;
+    /* margin-inline: 1rem; */
+}
+
+.check-bar button{
+    padding: 7px 15px;
+    border-radius: 50%;
+    font-size: 28px;
+    border: none;
+    background-color: #447265;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.check-bar button:hover{
+    background-color: grey;
+    color: rgb(0, 0, 0);
+}
+
+/* end of button */
+
+
+/* Progress bar */
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    /* position: absolute;
+    bottom: 12%;
+    left: 44%; */
+}
+
+.bar{
+    width: 160px;
+    height: 5px;
+    background: grey;
+    border-radius: 10px;
+    /* font-family: "lato", sans-serif; */
+}
+
+.bar-progress{
+    height: 5px;
+    /* width: 50%;
+    background:#FF5722; */
+    width: 33.5%;
+    background: #FF5722;
+    float: left;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    /* animation: animasiBar 3s infinite ease; */
+}
+
+.value{
+    padding: 1rem;
+    text-align: center;
+    font-family: "lato", sans-serif;
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-value{
+    color: black;
+}
+
+@keyframes animasiBar {
+    /* 25%{
+        width: 25%;
+        background: #FF5722;
+    } */
+    33%{
+        width: 33%;
+        background: #FF5722;
+    }
+    66%{
+        width: 66%;
+        background: #FF5722;
+    }
+    100%{
+        width: 100%;
+        background: #FF5722;
+    }
+}
+
+.shadow-img{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* about second content */
+.about-sec-content{
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    height: 507px;
+}
+
+.about-sec-content .head{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.head h1{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-block: 10px;
+}
+.head p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-block: 10px;
+}
+
+.content-main{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.mainContent{
+    padding-top: 1rem;
+    padding-inline: 1rem;
+    /* text-align: center; */
+    width: 350px;
+    height: 158px;
+    margin-inline: 2rem;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.mainContent:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transform: scale(1.1);
+
+}
+
+.icon-instant svg{
+    width: 21px;
+    height: 19px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: left;
+    margin-bottom: 90px;
+}
+
+.mainContent .icon-instant h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+    /* text-align: left; */
+}
+
+
+.see-button{
+    margin-top: 36px;
+    padding: 1rem;   
+    display: flex;
+    justify-content: center;
+}
+
+.see-button .finity-button{
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px 25px;
+    /* width: 228px;
+    height: 55px; */
+    background-color: #447265;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    font-size: 18px;
+}
+
+.finity-button svg{
+    transition: 0.3s ease;
+}
+
+.finity-button:hover{
+    /* opacity: 50%; */
+    transform: scale(1.1);
+}
+
+.finity-button:hover svg{
+    transform: scale(1.1);
+    color: rgb(255, 29, 29);
+}
+
+/* Product Section */
+
+.content-product{
+    padding: 3rem;
+    /* padding-left: 10rem; */
+    margin: 8rem 3rem 0 3rem;
+    background-color:#F9F9F9;;
+    font-family: "Poppins", sans-serif;
+
+    display: flex;
+
+    border-radius: 20px;
+}
+
+.product-description{
+    margin-top: 86px;
+    margin-inline: 1rem;
+
+    max-width: 355px;
+}
+
+.product-description h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.product-description p{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.product-description .explore-button{
+    padding-block: 1.5rem;
+}
+.product-description .explore-button button{
+    /* padding: 1rem; */
+    width: 144px;
+    height: 39.27px;
+    background-color: #447265;
+    border-radius: 10px;
+    color: #ffffff;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-description .explore-button button:hover{
+    transform: scale(1.1);
+}
+
+.room{
+    position: relative;
+    display: inline-block ;
+
+    transition: transform 0.3s ease;
+
+    margin: 2rem 0rem;
+
+    border-radius: 20px;
+
+    /* line-height: 0px; */
+}
+.room:hover{
+    transform: scale(1.1);
+    /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+}
+
+
+.room img{
+    width: 325px;
+    height: 461px;
+    border-radius: 20px;
+
+    /* line-height: 0px; */
+}
+
+.overlay-room{
+    padding: 1rem;
+    background-color: #ffffff;
+    width: 177.5px;
+    height: 106.36px;
+    border-radius: 20px;
+
+
+    /* position: absolute;
+    bottom: 50px;
+    left: 25px;
+    
+    text-align: center; */
+}
+
+.overlay-room h3{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.overlay-room p{
+    padding-block: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #616161;
+}
+
+
+.posision-for{
+    display: flex;
+    /* align-content: baseline; */
+    /* justify-content: space-around; */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.scroll-content-wrapper{
+    overflow: hidden; /* Hide the overflow */
+    width: 1200px;
+    position: relative;
+}
+
+.main-product{
+    display: flex;
+    /* overflow-x: hidden; */
+    gap: 2rem;
+
+
+    margin-left: 2rem;
+    scroll-behavior: smooth;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+    transition: transform 0.3s ease;
+
+    position: relative;
+}
+
+.main-product .go-button{ 
+    padding: 10px;
+    /* position: absolute; */
+    margin-top: 50px;
+    margin-left: 60px;
+ }
+
+.main-product .go-button button{
+    text-align: center;
+    padding-top: 2px;
+    width: 39.27px;
+    height: 39.27px;
+    background-color: #FF5722;
+    border-radius: 50px;
+    border: none;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-button{
+    position: relative;
+    right: 25px;
+}
+
+.product-button button{
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: xx-large;
+    border: 1px solid;
+    margin: 0 0.5rem;
+    transition: 0.3s ease;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: 2;
+}
+
+.product-button button:hover{
+    background-color: #447265;
+    color: white;
+}
+
+.main-product .go-button button:hover{
+    transform: scale(1.1);
+    background-color: #616161;
+}
+

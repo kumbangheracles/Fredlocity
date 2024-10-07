@@ -1,0 +1,39 @@
+                <div class="dropdown">
+                    <div class="select">
+                            <span class="selected">Yogyakarta, Indonesia</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Yogyakarta, Indonesia</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Yogyakarta, Indonesia</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                        </ul>
+                    </div>
