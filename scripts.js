@@ -170,3 +170,20 @@ mainProduct.addEventListener('scroll', checkItemsInCenter);
 
 // Panggil fungsi saat halaman pertama kali dimuat
 window.addEventListener('load', checkItemsInCenter);
+
+const selectionTab = document.querySelector('.selection-tab');
+
+const search = document.querySelectorAll('.search');
+// search[2].style.cursor = 'pointer';
+// search.forEach(function(element) {
+//     element.addEventListener('click', function() {
+//         element.style.border = '1px solid black';
+//         element.style.transition = '0.3s ease';
+//     });
+// });
+// Array.from(searchs).forEach(function(inputElement) { //ubah htmlcollection menjadi array
+//     inputElement.addEventListener('input', function() {
+//         inputElement.style.border = '50px solid black'
+//     });
+// });
+

@@ -43,26 +43,41 @@
                 <div class="selection-tab">
                      <!-- onclick="block()" -->
                     <h4>Find Your Room Now!</h4>
-                    <div class="search-box">
-                        <div class="row">
-                            <input type="text" id="search" placeholder="Search for a room" autocomplete="off">
+                    <div class="search-tab">
+                        <div class="search-box">
+                            <div class="row">
+                                <input type="text" class="search1" placeholder="Location" autocomplete="off">
+                            </div>
+                            <div class="result-box">
+                                <!-- <ul>
+                                    <li>Javascript</li>
+                                    <li>Javascript</li>
+                                    <li>Javascript</li>
+                                </ul> -->
+                            </div>
+                        </div> 
+                        <div class="search-box">
+                            <div class="row">
+                                <input type="text" class="search2" placeholder="Room type" autocomplete="off">
+                            </div>
+                            <div class="result-box2">
+
+                            </div>
                         </div>
-                        <div class="row">
-                            <input type="text" id="search" placeholder="Search for a room" autocomplete="off">
-                        </div>
-                        <div class="row">
-                            <input type="text" id="search" placeholder="Search for a room" autocomplete="off">
+                        <div class="search-box">
+                            <div class="row">
+                                <input type="date" class="search-date" placeholder="Date" autocomplete="off">
+                            </div>
                         </div>
                         <div class="search-button">
                             <button type="button">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.57439 17.1488C13.7576 17.1488 17.1488 13.7576 17.1488 9.57439C17.1488 5.39117 13.7576 2 9.57439 2C5.39117 2 2 5.39117 2 9.57439C2 13.7576 5.39117 17.1488 9.57439 17.1488Z" stroke="white" stroke-width="2.5"/>
                                     <path d="M20.5166 20.4588L15.467 15.4092" stroke="white" stroke-width="2.5"/>
-                                    </svg>
-                                    
+                                </svg>          
                             </button>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
@@ -403,6 +418,7 @@
          </section>
     </main>
     <script src="scripts.js"></script>
+    <script src="autocomplete.js"></script>
 </body>
 </html>
 

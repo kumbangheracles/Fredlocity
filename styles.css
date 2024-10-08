@@ -96,10 +96,10 @@ header nav .login button:hover{
     height: 236px;
 }
 .selection-tab h4{
-    padding: 1rem;
+    padding: 1rem 10px;
     font-size: x-large;
 }
-.search-box{
+.search-tab{
     display: flex;
     align-content: baseline;
     /* gap: 1rem; */
@@ -108,17 +108,106 @@ header nav .login button:hover{
     
 }
 
+.row{
+    display: flex;
+    align-items: center;
+}
+
 .row input{
     padding: 1rem;
     width: 300px;
     height: 60px;
 
     border: none;
-    border-radius: 10px;
+    border-radius: 10px ;
     background-color: #F4F4F4;
+
+    transition: 0.3s ease;
+    font-size: normal;
+    flex: 1;
 }
 
+::placeholder{
+    transition: 0.5s ease;
+}
 
+.search-date{
+    cursor: pointer;
+}
+
+.row input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+
+}
+
+/* .row input:focus::placeholder{
+    transform: translateY(-10px);
+} */
+
+/* .row input:focus{
+    border: 1px solid #4CAF50;
+    outline: none;
+} */
+
+.result-box{
+    max-height: 300px;
+    overflow-y: scroll;
+    
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+}
+.result-box2{
+    max-height: 300px;
+    overflow-y: scroll;
+    
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+}
+
+.result-box ul{
+    border-top: 1px solid #999;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 10px;
+    background-color: #F4F4F4;
+
+    
+}
+.result-box2 ul{
+    border-top: 1px solid #999;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 10px;
+    background-color: #F4F4F4;
+
+    
+}
+
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px;
+    cursor: pointer;
+
+    /* transition: 0.2s ease; */
+}
+.result-box2 ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px;
+    cursor: pointer;
+
+    /* transition: 0.2s ease; */
+}
+
+.result-box ul li:hover{
+    background-color: #79ad9e;
+}
+.result-box2 ul li:hover{
+    background-color: #79ad9e;
+}
 .search-button button{
     /* margin-top: 5px; */
     /* padding: 10px; */
