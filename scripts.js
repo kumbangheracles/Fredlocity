@@ -1,14 +1,6 @@
 let dropdown = document.querySelectorAll('.dropdown');
 const button = document.querySelectorAll('#button')
 
-
-for(let i = 0; i<button.length; i++){
-    button[i].addEventListener('click', function(){
-        dropdown[i].classList.toggle('active');
-        button[i].classList.toggle('rotate');        
-    })
-}
-
 const value = document.querySelector(".value");
 const barProgress = document.querySelector(".bar-progress");
 const prevButton = document.getElementById("prev-button");
@@ -98,26 +90,6 @@ const nextButtonProduct = document.getElementById('product-button-next')
 
 const mainProduct = document.querySelector('.main-product')
 
-// prevButton.addEventListener('click', function(){
-//     mainProduct.scrollBy({
-//         left: -100,
-//         behavior: 'smooth',
-//     });
-// })
-
-// document.getElementById('product-button-prev').onclick = function() {
-//     document.querySelector('.main-product').scrollBy({
-//         left: -100, // Jumlah pixel untuk scroll ke kiri
-//         behavior: 'smooth'
-//     });
-// }
-// document.getElementById('product-button-next').onclick = function() {
-//     document.querySelector('.main-product').scrollBy({
-//         left: 100, // Jumlah pixel untuk scroll ke kanan
-//         behavior: 'smooth'
-//     });
-// }
-
 let scrollAmount = 0;
 const scrollStep = 240; // Berapa banyak pixel untuk di-scroll setiap klik
 const maxScroll = document.querySelector('.main-product').scrollWidth - document.querySelector('.content-product').clientWidth;
@@ -132,17 +104,6 @@ document.getElementById('product-button-next').onclick = function() {
     document.querySelector('.main-product').style.transform = `translateX(-${scrollAmount}px)`;
 }
 
-// document.body.addEventListener('mousemove', function(event){
-//     // posisi mouse
-//     console. log(event.clientY);
-//     // uuran browser
-//     console.log(window.innerWidth);
-//     const xPos = Math.round((event.clientX / window.innerWidth) * 255)
-//     console.log(xPos);
-//     const yPos = Math.round((event.clientY / window.innerHeight) * 255)
-//     console.log(yPos);
-//     // document.body.style.backgroundColor = 'rgb('+ xPos +','+ yPos +',100)';
-// });
 
 
 
@@ -174,16 +135,10 @@ window.addEventListener('load', checkItemsInCenter);
 const selectionTab = document.querySelector('.selection-tab');
 
 const search = document.querySelectorAll('.search');
-// search[2].style.cursor = 'pointer';
-// search.forEach(function(element) {
-//     element.addEventListener('click', function() {
-//         element.style.border = '1px solid black';
-//         element.style.transition = '0.3s ease';
-//     });
-// });
-// Array.from(searchs).forEach(function(inputElement) { //ubah htmlcollection menjadi array
-//     inputElement.addEventListener('input', function() {
-//         inputElement.style.border = '50px solid black'
-//     });
-// });
 
+let navbar = document.getElementById('nav')
+const burger = document.querySelector('.burger')
+burger.addEventListener('click', function(){
+    navbar.classList.toggle('tampil');
+    
+})

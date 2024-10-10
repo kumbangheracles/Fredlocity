@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsives.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="responsives.css">
+
     <title>Fredlocity</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="header">
+        <div class="burger">
+            <div class="logo2">
+                <div class="comp-logo">
+                    <h3>F</h3>                           
+                </div>
+                <h4>Fredlocity</h4>
+            </div>
+        </div>
+        <nav id="nav">
             <div class="logo">
                 <img src="LOGO/logo.svg" alt="">
                 <h4>Fredlocity</h4>
@@ -49,11 +58,7 @@
                                 <input type="text" class="search1" placeholder="Location" autocomplete="off">
                             </div>
                             <div class="result-box">
-                                <!-- <ul>
-                                    <li>Javascript</li>
-                                    <li>Javascript</li>
-                                    <li>Javascript</li>
-                                </ul> -->
+                                
                             </div>
                         </div> 
                         <div class="search-box">
@@ -388,33 +393,77 @@
         <!-- Pricing And Partnership -->
          <section id="pricing" id="partnership">
             <div class="content-pricing">
-                <h1>Transactions with Fredlocity is very simple.</h1>
+                <h1>Transactions with <br>
+                    Fredlocity is very simple.</h1>
                 <div class="main-content-pricing">
-                    <div class="find-room">
-                        <div class="icon-pricing">
-                            <svg width="151" height="153" viewBox="0 0 151 153" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_d_0_179)">
-                                <rect width="97" height="97" rx="48.5" fill="#FF5722"/>
-                                </g>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M61.2135 59C60.5411 59.7998 59.7999 60.5408 59 61.213L64.7865 67L67 64.7862L61.2135 59Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M47.5 31C56.5978 31 64 38.4014 64 47.5C64 56.5986 56.5978 64 47.5 64C38.4022 64 31 56.5986 31 47.5C31 38.4014 38.4022 31 47.5 31ZM32.5714 47.5C32.5714 55.7319 39.2681 62.4286 47.5 62.4286C55.7319 62.4286 62.4286 55.7319 62.4286 47.5C62.4286 39.2681 55.7319 32.5714 47.5 32.5714C39.2681 32.5714 32.5714 39.2681 32.5714 47.5Z" fill="white"/>
-                                <defs>
-                                <filter id="filter0_d_0_179" x="-54" y="-52" width="205" height="205" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                <feOffset dy="2"/>
-                                <feGaussianBlur stdDeviation="27"/>
-                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.341176 0 0 0 0 0.133333 0 0 0 0.2 0"/>
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_179"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_179" result="shape"/>
-                                </filter>
-                                </defs>
-                                </svg>
-                                
-                        </div>                        
+                    <!-- Find Room -->
+                    <div class="pricing-room">
+                        <div class="flex-content">
+                            <div class="icon-pricing">
+                                <div class="round">
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.2135 28C29.5411 28.7998 28.7999 29.5408 28 30.213L33.7865 36L36 33.7862L30.2135 28Z" fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 0C25.5978 0 33 7.40143 33 16.5C33 25.5986 25.5978 33 16.5 33C7.40221 33 0 25.5986 0 16.5C0 7.40143 7.40221 0 16.5 0ZM1.57143 16.5C1.57143 24.7319 8.26807 31.4286 16.5 31.4286C24.7319 31.4286 31.4286 24.7319 31.4286 16.5C31.4286 8.26807 24.7319 1.57143 16.5 1.57143C8.26807 1.57143 1.57143 8.26807 1.57143 16.5Z" fill="white"/>
+                                        </svg>          
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="sec">
+                                            <path d="M8.55556 2.33333V14H0V12.4444H1.55556V0H8.55556V0.777778H12.4444V12.4444H14V14H10.8889V8.16667V2.33333H8.55556ZM5.44444 6.22222V7.77778H7V6.22222H5.44444Z" fill="#FFAB90"/>
+                                        </svg>                     
+                                </div>                    
+                            </div>   
+                            <div class="curved-line">
+                                <img src="IMG/curved-line.png" alt="">
+                            </div> 
+                        </div>
+                        <h4>Find Room</h4>
+                        <p>We have helped more than 10,000 people complete their room assignments.</p>
+                    </div>
+                    <!-- Book Appointments -->
+                    <div class="pricing-room">
+                        <div class="flex-content">
+                            <div class="icon-pricing">
+                                <div class="round">
+                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 6C7.44772 6 7 5.70152 7 5.33333V0.666667C7 0.298477 7.44772 0 8 0C8.55228 0 9 0.298477 9 0.666667V5.33333C9 5.70152 8.55228 6 8 6Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 6C23.4477 6 23 5.70152 23 5.33333V0.666667C23 0.298477 23.4477 0 24 0C24.5523 0 25 0.298477 25 0.666667V5.33333C25 5.70152 24.5523 6 24 6Z" fill="white"/>
+                                        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M18.4909 27.6316H2.18182C1.78016 27.6316 1.45455 27.3252 1.45455 26.9474V11.2105C1.45455 10.8326 1.78016 10.5263 2.18182 10.5263H29.8182C30.2198 10.5263 30.5455 10.8326 30.5455 11.2105V19.2753C31.0768 19.6029 31.5651 19.9885 32 20.4241V4.36842C32 3.61266 31.3488 3 30.5455 3H26.1818V5.73684C26.1818 6.87048 25.205 7.78947 24 7.78947C22.795 7.78947 21.8182 6.87048 21.8182 5.73684V3H10.1818V5.73684C10.1818 6.87048 9.20498 7.78947 8 7.78947C6.79502 7.78947 5.81818 6.87048 5.81818 5.73684V3H1.45455C0.651222 3 0 3.61266 0 4.36842V27.6316C0 28.3873 0.651222 29 1.45455 29H19.0618C18.824 28.5627 18.6328 28.1043 18.4909 27.6316Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5 32C22.9101 32 20 29.0899 20 25.5C20.004 21.9118 22.9118 19.004 26.5 19C30.0899 19 33 21.9101 33 25.5C33 29.0899 30.0899 32 26.5 32ZM30.6217 23.8439C30.9037 23.5619 30.9037 23.1048 30.6217 22.8227C30.3397 22.5408 29.8825 22.5408 29.6005 22.8227L25.0556 27.3677L23.3995 25.7116C23.1161 25.4379 22.6657 25.4418 22.3871 25.7204C22.1085 25.999 22.1046 26.4494 22.3783 26.7328L24.5449 28.8995C24.827 29.1814 25.2841 29.1814 25.5662 28.8995L30.6217 23.8439Z" fill="white"/>
+                                    </svg>
+                                                            
+                                </div>                    
+                            </div>   
+                            <div class="curved-line">
+                                <img src="IMG/curved-line-flipp.png" alt="">
+                            </div> 
+                        </div>
+                        <h4>Book Appointments</h4>
+                        <p>We have helped more than 10,000 people complete their room assignments.</p>
+                    </div>
+                    <!-- Get Room -->
+                    <div class="pricing-room">
+                        <div class="flex-content">
+                            <div class="icon-pricing">
+                                <div class="round">
+                                    <svg width="46" height="36" viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.631 32.841L0 22L3 19L11 24L34 0L37 2L13.65 32.653C13.2981 33.1148 12.7629 33.4009 12.1835 33.437C11.604 33.4731 11.0374 33.2556 10.631 32.841Z" fill="white"/>
+                                        <path opacity="0.497489" fill-rule="evenodd" clip-rule="evenodd" d="M45 9H40C39.4477 9 39 8.55228 39 8C39 7.44772 39.4477 7 40 7H45C45.5523 7 46 7.44772 46 8C46 8.55228 45.5523 9 45 9Z" fill="white"/>
+                                        <path opacity="0.497489" fill-rule="evenodd" clip-rule="evenodd" d="M45 18H33C32.4477 18 32 17.5523 32 17C32 16.4477 32.4477 16 33 16H45C45.5523 16 46 16.4477 46 17C46 17.5523 45.5523 18 45 18Z" fill="white"/>
+                                        <path opacity="0.497489" fill-rule="evenodd" clip-rule="evenodd" d="M45 27H26C25.4477 27 25 26.5523 25 26C25 25.4477 25.4477 25 26 25H45C45.5523 25 46 25.4477 46 26C46 26.5523 45.5523 27 45 27Z" fill="white"/>
+                                        <path opacity="0.497489" fill-rule="evenodd" clip-rule="evenodd" d="M45 36H19C18.4477 36 18 35.5523 18 35C18 34.4477 18.4477 34 19 34H45C45.5523 34 46 34.4477 46 35C46 35.5523 45.5523 36 45 36Z" fill="white"/>
+                                    </svg>
+                                                             
+                                </div>                    
+                            </div>   
+                            <div class="curved-line">
+                                <!-- <img src="IMG/curved-line.png" alt=""> -->
+                            </div> 
+                        </div>
+                        <h4>Get Room</h4>
+                        <p>We have helped more than 10,000 people complete their room assignments.</p>
                     </div>
                 </div>
             </div>
+
+
          </section>
     </main>
     <script src="scripts.js"></script>

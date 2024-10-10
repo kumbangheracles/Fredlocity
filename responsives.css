@@ -1,12 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: "Playfair Display", serif; */
-}
 
-@media screen and (max-width){
+@media (max-width : 600px){
+    body{
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .logo2{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        color: white;
+        
+    }
+
+    header nav .logo{
+        display: none;
+        
+    }
     
+    header{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        top: 0;
+    }
+
+    .tampil{
+        display: block;
+    }
+
+    header nav{
+        padding-top: 3px;
+        display: none;
+        margin: 1px;
+        border-radius: 10px;
+        background: rgba(78, 77, 77, 0.5);
+        backdrop-filter: blur(10px);
+        /* border: 1px solid; */
+
+        transition: 0.5s ease;
+    }
+    header nav .navbar{
+        display: block;
+        transition: 0.5s ease;
+        text-align: center;
+
+    }
+
+    .navbar li{
+        padding: 6px;
+        margin-top: 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        /* transition: 0.3s; */
+
+        letter-spacing: 2px;
+    }
+    
+    
+    /* header nav .navbar li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 3rem;
+        width: 100%;
+        cursor: pointer;
+    } */
+    
+    .navbar li:hover{
+        background-color: aliceblue;
+    }
+
+    .login button{
+
+        margin-top: 23px;
+        width: 100%;
+        height: 36px;
+        padding: 0;
+
+        border-radius: 20px;
+
+        letter-spacing: 2px;
+    }
+
+
+
+    .comp-logo h3{
+        color: white;
+        font-size: 11px;
+    }
+
+    .logo2 h4{
+        letter-spacing: 2px;
+    }
+    .comp-logo {
+        margin-right: 10px;
+        border-radius: 50%;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background-color: #FF5722;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger{
+        display: flex;
+        padding: 8px;
+        justify-content: center;
+        
+        background-color: #447265;
+        margin-top: 1px;
+
+        border-radius: 20px;
+
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .burger:hover{
+        opacity: 0.5;
+    }
+
+   
+
+    .intro{
+        text-align: center;
+
+        padding-top: 3rem;
+    }
+
+    .landing-img img{
+        padding: 5px;
+
+        margin-top: -15px;
+    }
+
+    #Home .intro .description h1{ 
+        font-size: 30px;
+    }
+    .description p{ 
+        margin-top: -5px;
+    }
+    .search-tab{
+        display: block;
+        align-items: center;
+    }
+
+    .search-box{
+        margin-block: 1rem;
+    }
+
+    .selection-tab{
+        /* width: 400px; */
+        height: 450px;
+
+        margin: auto;
+
+        text-align: center;
+        /* position: relative; */
+        position: static;
+    }
 }
