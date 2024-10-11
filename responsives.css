@@ -29,23 +29,27 @@
     }
 
     .tampil{
-        display: block;
+        /* display: block; */
+        height: 400px;
     }
 
     header nav{
         padding-top: 3px;
-        display: none;
+        display: block;
         margin: 1px;
         border-radius: 10px;
         background: rgba(78, 77, 77, 0.5);
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
         /* border: 1px solid; */
+
+        height: 0;
+        overflow: hidden;
 
         transition: 0.5s ease;
     }
     header nav .navbar{
         display: block;
-        transition: 0.5s ease;
+        /* transition: 0.5s ease; */
         text-align: center;
 
     }
