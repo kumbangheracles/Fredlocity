@@ -47,55 +47,17 @@
     }
 
     .tampil{
-        /* display: block; */
-        height: 480px;
-    }
-    .tdktampil{
-        /* display: block; */
-        height: 0;
-    }
-    .burger{
-        display: flex;
-        padding: 8px;
-        justify-content: center;
-
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 490px;
-        z-index: 999;
-
-
-        background-color: #447265;
-        margin-top: 1px;
-
-        border-radius: 10px;
-
-        transition: 0.3s;
-        cursor: pointer;
-    }
-
-    .burger:hover{
-        opacity: 0.8;
+        display: block;
     }
 
     header nav{
-        padding-top: 30px;
-        display: block;
+        padding-top: 3px;
+        display: none;
         margin: 1px;
         border-radius: 10px;
         background: rgba(78, 77, 77, 0.5);
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
         /* border: 1px solid; */
-        
-        position: fixed;
-        width: 490px;
-        
-        /* position: relative; */
-        left: 0;
-        /* top: 0 */
-        height: 0;
-        overflow: hidden;
 
         transition: 0.5s ease;
     }
