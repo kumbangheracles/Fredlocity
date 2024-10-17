@@ -18,5 +18,6 @@ Since Fredlocity is a frontend-only application, the following technologies are 
 Important Note
 The UI/UX design of the Fredlocity project is not my own creation. 
 I am only responsible for building the front-end structure and functionality based on the provided design. 
+I am also have made adjustments in several sections to improve the logical flow and user experience. These changes were made with the permission of the design owner.
 The original design has been implemented into HTML, CSS, and JavaScript code to create a functional user interface.
 if you want to see the owner of this design: https://dribbble.com/titotriatmojo

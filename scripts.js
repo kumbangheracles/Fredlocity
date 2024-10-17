@@ -119,7 +119,7 @@ function checkItemsInCenter() {
         
         // Cek apakah item berada di sekitar posisi tengah
         if (Math.abs(itemCenter - containerCenter) < itemRect.width / 2) {
-            item.style.transform = 'scale(1.1)'; // Jika item dekat dengan tengah, scale
+            item.style.transform = 'scale(1.1)'; // Jika item dekat dengan tengah, scale(1.1)
         } else {
             item.style.transform = 'scale(1)'; // Jika tidak, kembali ke ukuran normal
         }
@@ -139,6 +139,20 @@ const search = document.querySelectorAll('.search');
 let navbar = document.getElementById('nav')
 const burger = document.querySelector('.burger')
 burger.addEventListener('click', function(){
+     // Hapus kelas 'tdktampil' jika ada untuk menghindari konflik animasi
+     if (navbar.classList.contains('tdktampil')) {
+        navbar.classList.remove('tdktampil');
+    }
+    // Toggle kelas 'tampil' untuk menampilkan atau menyembunyikan navbar
     navbar.classList.toggle('tampil');
-    
+})
+
+const navigation = document.querySelectorAll('.navigation');
+navigation.forEach(function(el){
+    el.addEventListener('click', function(e){
+        if (navbar.classList.contains('tampil')) {
+            navbar.classList.remove('tampil');
+            navbar.classList.add('tdktampil');
+        }
+    })
 })

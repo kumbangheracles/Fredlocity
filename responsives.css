@@ -1,11 +1,20 @@
 
-@media (max-width : 600px){
+
+/* ======================================== Mobile responsive ======================================*/
+
+@media (max-width : 600px ){
     body{
         width: 500px;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        position: relative;
+        /* position: relative; */
+
+        overflow-x: hidden;
+    }
+    
+    html{
+        scroll-behavior: smooth;
     }
 
     .logo2{
@@ -20,32 +29,79 @@
         display: none;
         
     }
+
+    .content-header{
+        margin: auto;
+    }
     
     header{
+
         position: fixed;
         z-index: 999;
-        width: 100%;
+        /* width: 100%; */
         top: 0;
+
+        background: transparent;
+
+        
     }
 
     .tampil{
-        display: block;
+        /* display: block; */
+        height: 480px;
+    }
+    .tdktampil{
+        /* display: block; */
+        height: 0;
+    }
+    .burger{
+        display: flex;
+        padding: 8px;
+        justify-content: center;
+
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 490px;
+        z-index: 999;
+
+
+        background-color: #447265;
+        margin-top: 1px;
+
+        border-radius: 10px;
+
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .burger:hover{
+        opacity: 0.8;
     }
 
     header nav{
-        padding-top: 3px;
-        display: none;
+        padding-top: 30px;
+        display: block;
         margin: 1px;
         border-radius: 10px;
         background: rgba(78, 77, 77, 0.5);
         backdrop-filter: blur(10px);
         /* border: 1px solid; */
+        
+        position: fixed;
+        width: 490px;
+        
+        /* position: relative; */
+        left: 0;
+        /* top: 0 */
+        height: 0;
+        overflow: hidden;
 
         transition: 0.5s ease;
     }
     header nav .navbar{
         display: block;
-        transition: 0.5s ease;
+        /* transition: 0.5s ease; */
         text-align: center;
 
     }
@@ -58,16 +114,9 @@
         /* transition: 0.3s; */
 
         letter-spacing: 2px;
+
     }
     
-    
-    /* header nav .navbar li a{
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        padding: 3rem;
-        width: 100%;
-        cursor: pointer;
-    } */
     
     .navbar li:hover{
         background-color: aliceblue;
@@ -106,30 +155,18 @@
         align-items: center;
     }
 
-    .burger{
-        display: flex;
-        padding: 8px;
-        justify-content: center;
-        
-        background-color: #447265;
-        margin-top: 1px;
-
-        border-radius: 20px;
-
-        transition: 0.3s;
-        cursor: pointer;
-    }
-
-    .burger:hover{
-        opacity: 0.5;
-    }
+   
 
    
 
+   
+/* Home Section */
     .intro{
         text-align: center;
 
         padding-top: 3rem;
+        margin-top: 10px;
+        
     }
 
     .landing-img img{
@@ -139,7 +176,7 @@
     }
 
     #Home .intro .description h1{ 
-        font-size: 30px;
+        font-size: 32px;
     }
     .description p{ 
         margin-top: -5px;
@@ -154,13 +191,183 @@
     }
 
     .selection-tab{
-        /* width: 400px; */
+        width: 400px;
         height: 450px;
 
         margin: auto;
-
         text-align: center;
-        /* position: relative; */
+        position: relative;
+        /* position: static; */
+    }
+
+    .search-box{
+        position: relative;
+    }
+    .result-box{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+
+    /* About Section */
+
+    .head-content{
+        text-align: center;
+        width: 400px;
+    }
+
+    .change-button{
+        display: none;
+    }
+
+    .desk-room{
+        width: 350px;
+        height: 480px;
+    }
+    .office-room{
+        width: 350px;
+        height: 480px;
+
+        margin-bottom: 40px;
+    }
+    .meeting-room{
+        width: 350px;
+        height: 480px;
+    }
+
+    .about-content{
+        display: block;
+    }
+    .parent{
+        display: block;
         position: static;
     }
+
+    .progress-bar{
+        display: none;
+    }
+
+
+
+    /* about sec content */
+    .about-sec-content{
+        margin-top: 55rem;
+    
+    }
+
+    .about-sec-content .head{
+        
+        margin-bottom: 0;
+        
+    }
+
+    .head h1{
+        font-size: 1rem;
+
+    }
+
+    .content-main{
+        display: block;
+
+        margin: 0;
+        padding: 0;
+
+        width: 100%;
+    }
+
+   
+
+    .head h1{
+        font-size: 2rem;
+    }
+    
+    .see-button{
+        margin-top: 0;
+    }
+
+    .mainContent{
+        /* margin: auto; */
+        position: relative;
+        right: 10px;
+        margin-bottom: 30px;
+
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+    }
+
+    .mainContent:hover{
+        transform: none;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+    }
+
+    /* product section */
+    .content-product{
+        margin-top: 27rem;
+        display: block;
+    }
+
+    .product-button{
+        display: none;
+    }
+
+    .scroll-content-wrapper{
+        display: none;
+    }
+
+
+
+
+    /* pricing */
+    .content-pricing h1{
+        font-size: 34px;
+    }
+
+    .main-content-pricing{
+        display: block;
+        /* width:50px; */
+        width: 300px;
+        margin: auto;
+
+        transition: 1s;
+    }
+    .curved-line{
+        display: none;
+    }
+
+    .pricing-room{
+        text-align: center;
+        /* border: 1px solid; */
+        /* margin: auto; */
+
+        /* margin: 0; */
+    }
+    .pricing-room:nth-child(2){
+        margin-top: 0;
+    }
+    .pricing-room:nth-child(3){
+        margin-top: 0;
+    }
+
+    .pricing-room h4{
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+
+    .icon-pricing{
+        margin: auto;
+        
+    }
+
+
+
+    /* Partnership */
+    .content-partnership{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 4rem;
+        align-items: flex-start;
+    }
+
+
+
 }

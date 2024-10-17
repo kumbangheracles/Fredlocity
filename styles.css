@@ -7,12 +7,34 @@
     /* font-family: "Playfair Display", serif; */
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding-block: 5px;
+
+    width: 100%;
+    
+    padding-inline: 40px;
+
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2) ;
+    height: 70px;
+}
+
+
 header nav{
     display: flex;
     justify-content: space-between;
     font-family: "Poppins", sans-serif;
-    padding: 1rem;
-    margin: 2rem;
+    
+    
 }
 
 .burger{
@@ -22,7 +44,30 @@ header nav{
 header nav .logo{
     display: flex;
     gap: 10px;   
+    
+    margin-top: 5px;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    /* color: white; */
+
+    align-items: baseline;
 }
+
+.logo-design{
+    width: 40px;
+    height: 40px;
+    background-color: #FF5722;
+    border-radius: 50px;
+
+    text-align: center;
+    /* align-items: center; */
+    align-content: center;
+
+    color: white;
+
+}
+
 header nav .logo h4{
     font-size: large; 
 }
@@ -34,27 +79,47 @@ header nav .logo img{
 header nav .navbar{
     display: flex;
     justify-content: space-evenly;
-    gap: 3rem;
+    gap: 20px;
     list-style: none;
+    
+    align-items: baseline;   
+    
+    padding-top: 7px;
+}
+
+header nav .navbar li{
+    /* border: 1px solid black; */
+    padding: 10px;
+    /* background-color: #F4F4F4; */
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+header nav .navbar li a:hover{
+    color: #79ad9e;
+    text-decoration: underline;
 }
 
 header nav .navbar a{
     text-decoration: none;
     color: black;
     font-weight: 400;
+
+    font-size: 14px;
 }
 
 .login button{
-    padding: 1rem 3rem;
+    /* padding: 1rem 3rem; */
+    width: 140px;
+    height: 40px;
     background-color: #447265;
-    position: relative;
     border-radius: 8px;
     border: none;
     color: white;
-    bottom: 10px;
+
     cursor: pointer;
     transition: all 0.3s ease;
-    /* border: 2px solid black; */
+  
 }
 
 header nav .login button:hover{
@@ -62,6 +127,10 @@ header nav .login button:hover{
 }
 
 /* Home */
+
+#Home{
+    padding: 1rem;
+}
 
 #Home .intro .description{
     text-align: center;
@@ -83,6 +152,8 @@ header nav .login button:hover{
 .intro{
     position: relative;
     top: 0px;
+
+    margin-top: 150px;
 }
 
 .selection-tab{
@@ -231,7 +302,13 @@ header nav .login button:hover{
     background-color: #79ad9e;
 }
 
+/* about section */
+
 #about{
+    padding: 1rem;
+}
+
+.parent{
     padding-inline: 3rem;
     margin-top: 8rem;
 }
@@ -275,7 +352,7 @@ header nav .login button:hover{
     display: flex;
     gap: 1rem;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* align-items: baseline;    */
     /* position: absolute; */
 }
@@ -301,10 +378,10 @@ header nav .login button:hover{
 }
 
 
-.parent{
+/* .parent{
     width: 1170px;
     height: 706px;
-}
+} */
 
 /* Office Room */
 
@@ -316,13 +393,9 @@ header nav .login button:hover{
     border-radius: 20px;
     margin-bottom: 10px;
     transition: 0.5s ease;
-    /* position: absolute;
-    left: 35.5%; */
+  
 }
-/* .office-room:hover{
-    width: 390px;
-    height: 440px;
-} */
+
 
 .office-room .posisi{
     display: flex;
@@ -497,31 +570,14 @@ header nav .login button:hover{
     color: black;
 }
 
-@keyframes animasiBar {
-    /* 25%{
-        width: 25%;
-        background: #FF5722;
-    } */
-    33%{
-        width: 33%;
-        background: #FF5722;
-    }
-    66%{
-        width: 66%;
-        background: #FF5722;
-    }
-    100%{
-        width: 100%;
-        background: #FF5722;
-    }
-}
-
 .shadow-img{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /* about second content */
 .about-sec-content{
+
+    margin-top: 8rem;
     padding: 1rem;
     font-family: "Poppins", sans-serif;
     height: 507px;
@@ -627,11 +683,15 @@ header nav .login button:hover{
 
 /* Product Section */
 
+#product{
+    padding: 1rem;
+}
+
 .content-product{
     padding: 3rem;
     /* padding-left: 10rem; */
     margin: 8rem 3rem 0 3rem;
-    background-color:#F9F9F9;;
+    background-color:#F9F9F9;
     font-family: "Poppins", sans-serif;
 
     display: flex;
@@ -673,7 +733,7 @@ header nav .login button:hover{
 }
 
 .product-description .explore-button button:hover{
-    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 .room{
@@ -809,11 +869,18 @@ header nav .login button:hover{
     background-color: #616161;
 }
 
+/* Pricing */
+
+#pricing{
+    padding: 1rem;
+}
+
 .main-content-pricing{
     padding: 1rem;
     display: flex;
     /* justify-content: space-around; */
     justify-content: center;
+    flex-wrap: wrap;
     gap: 6rem;
     margin-top: 3rem;
 }
@@ -833,6 +900,9 @@ header nav .login button:hover{
     padding: 1rem;
     width: 273px;
     height: 273px;
+
+    flex: 0 1 150px;
+    
     
 }
 
@@ -902,4 +972,341 @@ header nav .login button:hover{
     padding-bottom: 1rem;
 }
 
-/* Responsive */
+/* partnership */
+#partnership{
+    padding: 3rem 0;
+}
+.google-icon img{
+    width: 145px;
+    height: 50px;
+}
+.microsoft-icon img{
+    width: 195px;
+    height: 50px;
+}
+
+.content-partnership{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.icon-part{
+    cursor: pointer;
+    flex: 0 1;
+    transition: 0.3s ease;
+}
+
+.icon-part:hover{
+    transform: scale(1.1);
+}
+
+.walmart-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Feedbeck */
+.content-feedbeck{
+
+    font-family: "Poppins", sans-serif;
+
+    padding: 5rem 9rem;
+    margin: 2rem;
+
+    margin-top: 9rem;
+    background-color: #F9F9F9;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 3rem;
+
+    position: relative;
+
+    border-radius: 30px;
+
+    
+}
+
+.icon-person{
+    background-color: #FF5722;
+    padding: 10px;
+
+    
+    align-content: center;
+    text-align: center;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    left: 75px;
+    top: 125px;
+}
+
+/* .icon-person h1{
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+
+.img-person{
+    width: 500px;
+    height: 500px;
+
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
+.img-person img{
+    width: 600px;
+    height: 700px;
+    line-height: 0;
+}
+
+.feedbeck-desc p{
+    line-height: 32px;
+    /* display: block; */
+    white-space: pre-line;
+}
+
+.feedbeck-desc a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #447265;
+
+    line-height: 60px;
+
+    transition: 0.5s ease;
+}
+
+.feedbeck-desc a:hover{
+    text-decoration: underline;
+}
+
+/* Achivements */
+.content-achivements{
+    padding: 1rem;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins",sans-serif;
+
+    margin-inline: 1rem;
+}
+
+.achiv-desc{
+    padding: 1rem;
+    text-align: center;
+}
+
+.achiv-desc h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.list-achive{
+    /* padding: 1rem; */
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.icon-achive{
+    display: flex;
+    gap: 10px;
+    /* margin-left: 20px; */
+}
+
+/* Contact */
+
+.content-contact{
+    padding: 1rem;
+    margin: 6rem;
+    background-color: #F4F4F4;
+
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+    height: 363px;
+
+    border-radius: 25px;
+}
+
+.contact-desc{
+    padding: 1rem;
+}
+
+.contact-desc h1{
+    font-size: 38px;
+    line-height: 44.3px;
+}
+
+.contact-desc p{
+    line-height: 23px;
+    margin-block: 10px;
+}
+
+.email-input input{
+    height: 55px;
+    width: 500px;
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    border: none;
+
+    transition: 0.5s ease;
+}
+.email-input button{
+    height: 55px;
+    width: 200px;
+
+    border:none;
+    background-color: #447265;
+    border-radius: 10px;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.email-input button:hover{
+    opacity: 0.5;
+}
+
+.email-input input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+
+}
+
+/* Footer */
+#footer{
+    padding: 1rem;
+}
+
+.footer-content{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    font-family: "Poppins",sans-serif;
+}
+
+.footer-desc1{
+    padding: 1rem;
+}
+
+.footer-desc1 .logo .icon-foot{
+    background-color: #FF5722;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    color: white;
+
+    text-align: center;
+    align-content: center;
+
+    font-size: 25px;
+    
+    
+}
+
+.footer-desc1 .logo{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-desc1 p{
+    margin-block: 15px;
+}
+
+.footer-desc1 button{
+    background-color: #447265;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    width: 110px;
+    height: 40px;
+
+    transition: 0.3s ease;
+
+    cursor: pointer;
+}
+
+.footer-desc1 button:hover{
+    opacity: 0.5;
+}
+
+.footer-desc2{
+    padding: 1rem;
+    
+}
+
+.footer-desc2 p{
+    margin-top: 18px;
+}
+
+.footer-desc3{
+     padding: 1rem;
+}
+
+.footer-desc3 p{
+    margin-top: 18px;
+}
+
+.footer-desc4{
+    padding: 1rem;
+}
+.footer-desc4 p{
+    margin-block: 18px;
+}
+
+.footer-desc4 a{
+    text-decoration: none;
+    color: #FF5722;
+}
+
+.footer-desc4 a:hover{
+    color: #447265;
+}
+
+.line-foot hr{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-inline: auto;
+    width: 1050px;
+    text-align: center;
+}
+
+.icon-under{
+    display: flex;
+}
+
+.footer-under{
+    display: flex;
+    justify-content: center;
+    gap: 700px;
+    
+}
