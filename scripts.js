@@ -103,12 +103,7 @@ document.getElementById('product-button-next').onclick = function() {
     scrollAmount = Math.min(scrollAmount + scrollStep, maxScroll); // Jangan sampai lebih dari batas kanan
     document.querySelector('.main-product').style.transform = `translateX(-${scrollAmount}px)`;
 }
-
-
-
-
 const items = document.querySelectorAll('.room');
-
 function checkItemsInCenter() {
     const containerCenter = mainProduct.getBoundingClientRect().width / 2; // Titik tengah container
     const containerLeft = mainProduct.getBoundingClientRect().left;
@@ -156,3 +151,16 @@ navigation.forEach(function(el){
         }
     })
 })
+
+// Service Worker
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registered with scope: ', registration.scope);
+        })
+        .catch((error) => {
+          console.log('Service Worker registration failed: ', error);
+        });
+    });
+  }
