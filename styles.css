@@ -989,7 +989,7 @@ header nav .login button:hover{
     padding: 1rem;
     display: flex;
     justify-content: center;
-    gap: 90px;
+    gap: 150px;
     flex-wrap: wrap;
 
     margin-top: 50px;
@@ -1108,6 +1108,9 @@ header nav .login button:hover{
     gap: 10px;
     /* margin-left: 20px; */
 }
+.bungkus-achive{
+    display: flex;
+}
 
 /* Contact */
 
@@ -1115,13 +1118,10 @@ header nav .login button:hover{
     padding: 1rem;
     margin: 6rem;
     background-color: #F4F4F4;
-
     align-items: center;
     text-align: center;
     align-content: center;
-
     height: 363px;
-
     border-radius: 25px;
 }
 

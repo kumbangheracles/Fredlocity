@@ -1,5 +1,5 @@
 /* ======================================== Mobile responsive ======================================*/
-@media (max-width : 1000px ){
+@media (max-width : 600px ){
 
     html{
         scroll-behavior: smooth;
@@ -40,16 +40,13 @@
     .burger{
         display: flex;
         padding: 6px;
-        width: 465px;
+        width: 425px;
         justify-content: center;
         
         background-color: #447265;
         border-radius: 20px;
         transition: 0.3s;
         cursor: pointer;
-
-        margin-inline: 6px;
-
     }
     .burger:hover{
         opacity: 0.5;
@@ -58,7 +55,6 @@
     header nav{
         padding-top: 3px;
         display: block;
-        margin-inline: 3px;
         border-radius: 10px;
         background: rgba(78, 77, 77, 0.5);
         backdrop-filter: blur(10px);
@@ -66,7 +62,7 @@
         overflow: hidden;
         transition: 0.5s ease;
 
-        width: 470px;
+        width: 425px;
     }
     header nav .navbar{
         display: block;
@@ -400,9 +396,8 @@
     .footer-desc3{
         display: none;
     }
-    .line-foot{
-        width: 430px;
-        overflow-x: hidden;
+    .line-foot hr{
+        width: 425px;
     }
     .footer-under{
         display: flex;
