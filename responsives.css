@@ -3,6 +3,7 @@
 
     html{
         scroll-behavior: smooth;
+        display: flex;
     }
 
     .logo2{
@@ -35,12 +36,12 @@
 
     .tampil{
         display: block;
-        max-height: 430px;
+        max-height: 435px;
     }
     .burger{
         display: flex;
         padding: 6px;
-        width: 425px;
+        width: 100vh;
         justify-content: center;
         
         background-color: #447265;
@@ -62,7 +63,7 @@
         overflow: hidden;
         transition: 0.5s ease;
 
-        width: 425px;
+        width: 100vh;
     }
     header nav .navbar{
         display: block;
@@ -132,7 +133,7 @@
     }
 
     #Home .intro .description h1{ 
-        font-size: 32px;
+        font-size: 22px;
     }
     .description p{ 
         margin-top: -5px;
@@ -171,8 +172,8 @@
     }
     .parent{
         width: 450px;
-        padding: 10px;
-        margin-inline: auto;
+        /* padding: 10px;
+        margin-inline: auto; */
     }
     .head-content{
         text-align: center;
@@ -196,6 +197,8 @@
     }
     .about-content{
         display: block;
+        align-items: center;
+        text-align: center;
     }
     .parent{
         display: block;
@@ -246,7 +249,7 @@
     /* product section */
     #product{
         padding: 1px;
-        margin-top: 10rem;
+        margin-top: 20rem;
     }
     .content-product{
        

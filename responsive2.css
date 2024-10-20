@@ -1,22 +1,12 @@
 
-@media (min-width : 800px) {
-    body{
-        width: auto;
+@media (min-width : 610px) and (max-width: 1024px){
+    
+    html{
+        display: flex;
     }
-    .curved-line{
-        display: none;
-    }
+
     .product-button{
         display: none;
-    }
-
-    .scroll-content-wrapper{
-        display: none;
-    }
-
-    .product-description{
-        margin: auto;
-        text-align: center;
     }
 
     /* ======================== home content ====================*/
@@ -26,6 +16,13 @@
 
     #Home .intro .description h1{ 
         font-size: 42px;
+    }
+    #Home .intro .landing-img img{
+        width: 100%;
+    }
+    #Home .intro .landing-img{
+        display: flex;
+        justify-content: center;
     }
 
     .search-tab{
@@ -38,15 +35,12 @@
     }
 
     .selection-tab{
-        width: 720px;
+        width: 90%;
         height: 450px;
-
         margin: auto;
         text-align: center;
         position: relative;
-        /* position: static; */
     }
-
     .search-box{
         position: relative;
     }
@@ -55,186 +49,46 @@
         width: 100%;
         z-index: 1;
     }
+    .result-box2{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    .search-button button{
+        width: 520px;
+    }
     /* =================== about section ===================*/
     .change-button{
         display: none;
     }
-
-    .desk-room img{
-        border-radius: 20px;
-        margin-bottom: 10px;
-        transition: 0.5s;
-
-        width: 250px;
-        height: 400px;
-        
-    }
-    
-    .desk-room{
-        /* width: 300px; */
-        border-radius: 20px;
-        transition: 0.5s ease;
-       
-        width: 250px;
-        height: 400px;
-
-    }
-    
-    .desk-room h4{
-        text-align: center;
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 1px;
-     
-    }
-    
-    
-  
-    
-    /* Office Room */
-    
-    .office-room{
-        margin-top: 10px;
-        /* padding: 1rem; */
-        width: 250px;
-        height: 430px;
-        background-color: #FF5722;
-        border-radius: 20px;
-        margin-bottom: 10px;
-        transition: 0.5s ease;
-      
-    }
-    
-    
-    .office-room .posisi{
-        display: flex;
-        justify-content: end;
-        margin-inline: 20px;
-    }
-    
-    /* line 1 */
-    
-    .office-room .office .line1{
-        margin-top: 20px;
-        width: 130px;
-        height: 90px;
-        overflow: hidden;
-        padding: 1rem;
-     }
-    
-    .diagonal-line {
-        margin-block: 12px;
-        width: 135px;
-        height: 1px; /* Ketebalan garis */
-        background-color: #ffffff; /* Warna garis */
-        transform: rotate(40deg); 
-        position: relative;
-        bottom: 35px;
-        opacity: 40%;
-    }
-    
-    /* line 2 */
-    .office-room .office .line2{
-        margin-top: 20px;
-        /* margin-left: 10px; */
-        width: 60px;
-        height: 45px;
-        overflow: hidden;
-     }
-    
-    .diagonal-line2{
-        margin-bottom: 7.8px;
-        width: 135px;
-        height: 1px; /* Ketebalan garis */
-        background-color: #ffffff; /* Warna garis */
-        transform: rotate(40deg); 
-        opacity: 39%;
-    }
-    
-    
-    
-    .content-office{
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        width: 250px;
-    }
-    
-    .content-office h1{
-        font-family: "Poppins", sans-serif;
-        font-size: 22px;
-        font-weight: 700px;
-    }
-    
-    .content-office p{
-        font-size: 18px;
-        text-align: center;
-        font-family: "Lato",sans-serif;
-        letter-spacing: 1px;
-    }
-
-    .check-bar{
-        width: 200px;
-        height: 80px;
-
-        padding: 10px;
-
-        font-size: 12px;
-
-        align-items: center;
-
-        border-radius: 20px;
-        margin-right: 5px;
-    }
-    
-    /* end of office room */
-    
-    /* meeting room */
-    
-    .meeting-room{
-        border-radius: 20px;
-        transition: 0.5s ease;
-
-        width: 250px;
-        height: 400px;
-    }
-    
-    .meeting-room img{
-        /* padding-bottom: 1rem; */
-        border-radius: 20px;
-        /* background-color: gray; */
-        margin-bottom: 10px;
-        transition: 0.5s;
-
-        width: 250px;
-        height: 400px;
-    }
-    
-    .meeting-room h4{
-        text-align: center;
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 1px;
-    }
-
-    .about-content{
-        width: 720px;
-
-        display: flex;
-        gap: 8px;
-        position: relative;
-        left: -50px;
-        
-    }
-
     .progress-bar{
         display: none;
     }
-
     .head-content{
         align-items: center;
         text-align: center;
     }
-    
+    .head-content{
+        display: flex;
+        justify-content: center;
+    }
+    /* Product =============================== */
+    .content-product{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-description{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .scroll-content-wrapper{
+        overflow-x: scroll;
+    }
+
+    /* Pricing ========================================= */
+    .pricing-room{
+        margin: 0;
+        padding: 0;
+    }
 
 }

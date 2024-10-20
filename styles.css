@@ -4,13 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Playfair Display", serif; */
 }
-
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
-
 header{
     padding-block: 5px;
 
@@ -310,7 +308,7 @@ header nav .login button:hover{
 
 .parent{
     padding-inline: 3rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .head-content{
@@ -748,12 +746,6 @@ header nav .login button:hover{
 
     /* line-height: 0px; */
 }
-.room:hover{
-    transform: scale(1.1);
-    /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
-}
-
-
 .room img{
     width: 325px;
     height: 461px;
@@ -800,9 +792,15 @@ header nav .login button:hover{
 }
 
 .scroll-content-wrapper{
-    overflow: hidden; /* Hide the overflow */
+    overflow-x: scroll; /* Hide the overflow */
     width: 1200px;
     position: relative;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #447265;
+    /* color: white; */
 }
 
 .main-product{
@@ -825,6 +823,7 @@ header nav .login button:hover{
     /* position: absolute; */
     margin-top: 50px;
     margin-left: 60px;
+
  }
 
 .main-product .go-button button{
@@ -839,26 +838,6 @@ header nav .login button:hover{
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
-.product-button{
-    position: relative;
-    right: 25px;
-}
-
-.product-button button{
-    padding: 1rem 1.5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: xx-large;
-    border: 1px solid;
-    margin: 0 0.5rem;
-    transition: 0.3s ease;
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    z-index: 2;
-}
-
 .product-button button:hover{
     background-color: #447265;
     color: white;
@@ -1075,6 +1054,9 @@ header nav .login button:hover{
 }
 
 /* Achivements */
+#achivements{
+    margin-top: 100px;
+}
 .content-achivements{
     padding: 1rem;
     display: flex;
@@ -1114,14 +1096,19 @@ header nav .login button:hover{
 
 /* Contact */
 
-.content-contact{
+#contact{
     padding: 1rem;
-    margin: 6rem;
+    margin-top: 60px;
+}
+
+.content-contact{
+    margin: auto;
     background-color: #F4F4F4;
     align-items: center;
     text-align: center;
     align-content: center;
-    height: 363px;
+    height: 50vh;
+    width: 90%;
     border-radius: 25px;
 }
 
@@ -1174,6 +1161,7 @@ header nav .login button:hover{
 }
 /* Footer */
 #footer{
+    margin-top: 100px;
     padding: 1rem;
 }
 .footer-content{
