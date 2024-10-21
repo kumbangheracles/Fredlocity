@@ -41,7 +41,7 @@
     .burger{
         display: flex;
         padding: 6px;
-        width: 100vh;
+        width: 89vh;
         justify-content: center;
         
         background-color: #447265;
@@ -63,7 +63,7 @@
         overflow: hidden;
         transition: 0.5s ease;
 
-        width: 100vh;
+        width: 89vh;
     }
     header nav .navbar{
         display: block;
