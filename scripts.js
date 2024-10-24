@@ -89,15 +89,11 @@ const selectionTab = document.querySelector('.selection-tab');
 
 const search = document.querySelectorAll('.search');
 
-let navbar = document.getElementById('nav')
+let navbar = document.querySelector('.navbar')
 const burger = document.querySelector('.burger')
 burger.addEventListener('click', function(){
-     // Hapus kelas 'tdktampil' jika ada untuk menghindari konflik animasi
-     if (navbar.classList.contains('tdktampil')) {
-        navbar.classList.remove('tdktampil');
-    }
-    // Toggle kelas 'tampil' untuk menampilkan atau menyembunyikan navbar
     navbar.classList.toggle('tampil');
+    burger.classList.toggle('toggle');
 })
 
 const navigation = document.querySelectorAll('.navigation');
@@ -107,6 +103,8 @@ navigation.forEach(function(el){
             navbar.classList.remove('tampil');
             navbar.classList.add('tdktampil');
         }
+        burger.classList.remove('toggle');
+        
     })
 })
 
