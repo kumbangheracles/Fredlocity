@@ -120,3 +120,5 @@ if ('serviceWorker' in navigator) {
         });
     });
   }
+
+  AOS.init();
