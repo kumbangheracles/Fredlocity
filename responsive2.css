@@ -3,6 +3,7 @@
     
     html{
         display: flex;
+        overflow-x: hidden;
     }
 
     .product-button{

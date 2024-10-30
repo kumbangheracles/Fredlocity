@@ -4,10 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
+
+[data-aos] {
+    transform-origin: center bottom;
+}
+
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
+    overflow-x: hidden;
 }
 header{
     padding-block: 5px;

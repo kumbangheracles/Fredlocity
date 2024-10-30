@@ -121,4 +121,6 @@ if ('serviceWorker' in navigator) {
     });
   }
 
-  AOS.init();
+  AOS.init({
+    offset: 100
+  });
