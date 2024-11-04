@@ -1,5 +1,8 @@
 /* ======================================== Mobile responsive ======================================*/
-@media (max-width : 600px ){
+@media (max-width : 576px ){
+    body{
+        overflow-x: hidden;
+    }
 
     html{
         scroll-behavior: smooth;
@@ -11,9 +14,11 @@
         padding-inline: 10px;
         height: 43px;
         padding-block: 0;
+        width: 100%;
     }
+
+
     .burger{
-        /* border: 1px solid black; */
         display: block;
         height: 32px;
         cursor: pointer;
@@ -68,7 +73,7 @@
     }
 /* Home Section */
     #Home{
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .intro{
         text-align: center;
@@ -123,9 +128,11 @@
         margin-top: -90px;
     }
     .parent{
-        width: 450px;
-        /* padding: 10px;
-        margin-inline: auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .head-content{
         text-align: center;
@@ -151,9 +158,6 @@
         display: block;
         align-items: center;
         text-align: center;
-    }
-    .parent{
-        display: block;
     }
 
     .progress-bar{
