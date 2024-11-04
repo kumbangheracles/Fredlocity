@@ -105,13 +105,12 @@
     }
 
     .selection-tab{
-        width: 400px;
+        width: auto;
         height: 450px;
 
         margin: auto;
         text-align: center;
         position: relative;
-        /* position: static; */
     }
 
     .search-box{
@@ -323,7 +322,7 @@
     /* Contact */
     .content-contact{
         margin-top: 50px;
-        width: 390px;
+        width: auto;
         margin-inline: auto;
     }
     .email-input input{
